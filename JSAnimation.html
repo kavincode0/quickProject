@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Animation</h1>
+    <img src = "https://logos-download.com/wp-content/uploads/2019/01/JavaScript_Logo.png" name = "img" id="img1" onmouseover="stop()" onmouseout="start()">
+</body>
+<script lang="javascript" type="text/javascript">
+    var name = 'john'
+    var age = 28
+    var salary = 1000
+
+    document.write("Name: " + name + "<br/>" )
+    document.write("age : " + age + "<br/>" )
+    document.write("salary: " + salary + "<br/>" )
+    
+    var arr = new Array("https://logos-download.com/wp-content/uploads/2019/01/JavaScript_Logo.png", "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736401_960_720.png", "https://cdn.pixabay.com/photo/2016/09/14/20/50/tooth-1670434_1280.png", "https://cdn.pixabay.com/photo/2015/05/04/20/23/logo-752921_1280.png");
+    var i = 1;
+    var ref;
+
+    function picLib(){
+        document.images[0].src = arr[1];
+        i++
+        if(i<1)
+         i = 0;
+    }
+    function start(){
+        ref = setInterval("picLib()", 10)
+    }
+    function stop(){
+        clearInterval(ref)
+    }
+</script>
+<style>
+    #img1{
+        width: 200px;
+        height: 200px;
+    }
+</style>
+</html>
