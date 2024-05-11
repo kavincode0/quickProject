@@ -24,7 +24,7 @@ function flipCoin(){
     const result = random < 0.5 ? 'heads' : 'tails'
     setTimeout(()=>{
         coin.setAttribute('class', 'animate-'+result)
-        setTimeout(()=>Result(result), 2900);
+        setTimeout(Result(result), 3000);
     }, 100);
 }
 
