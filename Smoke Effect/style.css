@@ -25,7 +25,7 @@ section h1 span{
 }
 
 section h1 span.active{
-    animation: smoke 2s linear backwards;
+    animation: smoke 5s linear forwards;
     transform-origin: top;
 }
 

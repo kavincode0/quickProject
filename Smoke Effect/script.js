@@ -9,6 +9,6 @@ alphaSpan.forEach(span=>{
         span.classList.add("active");
         setTimeout(()=>{
             span.classList.remove("active");
-        }, 1000)
+        }, 6000)
     });
 })
