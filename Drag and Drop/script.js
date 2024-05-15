@@ -20,7 +20,7 @@ function drag(){
         mouseX = e.pageX;
         mouseY = e.pageY;
 
-        elex = Number.parseInt(dragging.style.left);
+        eleX = Number.parseInt(dragging.style.left);
         eleY = Number.parseInt(dragging.style.top);
 
         document.addEventListener("mousemove", mouseMove)
