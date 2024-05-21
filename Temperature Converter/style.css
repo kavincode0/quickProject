@@ -1,0 +1,49 @@
+body{
+    background: linear-gradient(red, yellow, green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card{
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   padding: 20px;
+   width: 300px;
+   text-align: center;
+}
+
+.input-container{
+    margin-bottom: 15px;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input::-webkit-inner-spin-button, 
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+} 
+
+button{
+    background-color: greenyellow;
+    color: rgb(101, 93, 93);
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: aquamarine;
+}
