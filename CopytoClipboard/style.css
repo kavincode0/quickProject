@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+button{
+    padding: 10px;
+    background-color: rgb(105, 105, 255);
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: aquamarine;
+}
+
+#message{
+    display: none;
+    padding: 10px;
+}
+
+.afterclick{
+    display: block;
+}
+
+h3{
+    padding: 20px;
+}
