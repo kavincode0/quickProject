@@ -29,5 +29,6 @@ span{
     100%{
         transform: scale(5) translateX(1000%) rotate(360deg);
         opacity: 1;
+        background-color: rgb(190, 60, 82);
     }
 }
