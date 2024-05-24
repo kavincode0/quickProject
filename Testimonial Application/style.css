@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: purple;
+}
+
+.wrapper{
+    background-color: white;
+    position: absolute;
+    width: 80vw;
+    max-width: 41em;
+    min-height: 25em;
+    border-radius: 0.6em;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    box-shadow: 0.1 0.8em 3em rgba(1, 17, 40, 0.15);
+    display: flex;
+}
+
+.container{
+    width: 85%;
+    height: 100%;
+    position: relatvie;
+    margin: auto;
+    padding: 1.8em 1.2em;
+
+}
+
+.wrapper button{
+    font-size: 1.8em;
+    height: 2.2em;
+    width: 2.2em;
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    color: purple;
+    box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button#next{
+    right: -1.1em;
+}
+
+button#prev{
+    left: -1.1em;
+}
+
+.container p{
+    color: black;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+}
+
+.container img{
+    display: block;
+    margin: 1.8em auto;
+    border-radius: 50%;
+    width: 9em;
+}
+
+.container h3{
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container h6{
+    color: grey;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 650px){
+    .wrapper{
+        font-size: 14px;
+    }
+}
