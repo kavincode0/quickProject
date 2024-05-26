@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgb(130,198,226);
+    background: linear-gradient(90deg, rgba(130,198,226,1) 16%, rgba(220,223,223,1) 37%, rgba(135,214,226,1) 48%, rgba(139,193,205,1) 66%, rgba(93,138,157,1) 80%, rgba(98,144,162,1) 92%, rgba(127,171,228,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    background-color: rgba(222, 212, 212, 0.553);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.timer{
+    font-size: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.05);
+    }
+}
+
+.timer span{
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+}
+
+ .control{
+    display: flex;
+    gap: 1rem;
+ }
+
+ button{
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: rgb(130,198,226);
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+ }
+
+ button:hover{
+    background: rgb(98, 223, 232);
+ }
+
+ .stopwatch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+ }
+
+ .lap-title{
+    font-size: 1.5rem;
+ }
+
+ .laps{
+    width: 100%;
+ }
+
+ ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+ }
+
+ li{
+    padding: 1rem;
+    border-bottom: 1px solid white;
+ }
+
+ li:last-child{
+    border-bottom: none;
+ }
+
+ li span{
+    font-weight: 700;
+ }
