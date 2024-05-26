@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: rgb(40, 202, 69);
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.8);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.togglebtn{
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.togglebtn:hover{
+    color: red;
+    transform: rotate(90deg);
+}
+
+.links{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.links a{
+    color: white;
+    text-transform: capitalize;
+    display:block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+}
+
+.links a:hover{
+    background-color: rgb(166, 211, 99);
+    color: white;
+    padding-left: 1.5rem;
+}
+
+.active{
+    height: 13rem;
+}
+
+@media screen and (min-width: 800px){
+    .nav-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 1rem; 
+    }
+
+    .header{
+        padding: 0;
+    }
+
+    .togglebtn{
+        display: none;
+    }
+
+    .links{
+        height: auto;
+        display: flex;
+    }
+
+    .links a{
+        padding: 0; 
+        margin: 0 0.5rem;
+    }
+
+    .links a:hover{
+        padding: 0;
+        background: transparent;
+        color: red;
+        transform: scale(1.2);
+    }
+}
